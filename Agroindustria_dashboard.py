@@ -39,11 +39,6 @@ if menu == "Datos":
     st.subheader("📂 Datos Generados")
     st.dataframe(data)
 
-# 5. Botón para Reiniciar Filtros
-    if st.sidebar.button("Reiniciar Filtros"):
-        filtered_data = data
-        st.experimental_rerun()
-
 # 6. Implementar Pestañas
     st.subheader("📌 Navegación entre Pestañas")
     tab1, tab2 = st.tabs(["📊 Gráficos", "📂 Datos"])
